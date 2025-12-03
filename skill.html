@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sowmya Sree - Skills</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #000;
+            color: #fff;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .skills-wrapper {
+            width: 100%;
+            max-width: 650px;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: #c86d6d;
+            font-weight: 800;
+            margin-bottom: 35px;
+        }
+
+        .skills-section {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+        }
+
+        .skills-column {
+            width: 45%;
+        }
+
+        /* Soft Skills block moved slightly right */
+        .skills-column.soft {
+            margin-left: 50px;
+        }
+
+        /* Technical Skills heading single line */
+        .skills-column h2:first-child {
+            white-space: nowrap;
+        }
+
+        h2 {
+            font-size: 35px;
+            color: #c86d6d;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        /* Soft Skills heading aligned with first item */
+        .skills-column.soft h2 {
+            padding-left: 15px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Soft Skills items aligned with heading */
+        .skills-column.soft ul li {
+            font-size: 24px;
+            margin: 12px 0;
+            text-align: left;
+            position: relative;
+            padding-left: 25px; /* align bullet with heading */
+            white-space: nowrap;
+        }
+
+        /* Soft Skills bullets */
+        .skills-column.soft ul li::before {
+            content: "•";
+            color: #c86d6d;
+            font-size: 32px;
+            position: absolute;
+            left: 0;
+            top: -4px;
+        }
+
+        /* Default column items */
+        .skills-column ul li {
+            font-size: 24px;
+            margin: 12px 0;
+            text-align: left;
+            position: relative;
+            padding-left: 25px;
+            white-space: nowrap;
+        }
+
+        .skills-column ul li::before {
+            content: "•";
+            color: #c86d6d;
+            font-size: 32px;
+            position: absolute;
+            left: 0;
+            top: -4px;
+        }
+
+        @media(max-width: 768px) {
+            .skills-section {
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+            .skills-column {
+                width: 90%;
+                margin-left: 0;
+            }
+            .skills-column.soft h2 {
+                padding-left: 0;
+            }
+            .skills-column.soft ul li {
+                padding-left: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="skills-wrapper">
+
+        <h1>Skills</h1>
+
+        <div class="skills-section">
+
+            <div class="skills-column">
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>Annotation Tools</li>
+                    <li>Quality Assurance</li>
+                </ul>
+            </div>
+
+            <div class="skills-column soft">
+                <h2>Soft Skills</h2>
+                <ul>
+                    <li>Communication</li>
+                    <li>Teamwork & Collaboration</li>
+                    <li>Time Management</li>
+                    <li>Attention to Detail</li>
+                    <li>Adaptability & Leadership</li>
+                    <li>Critical Thinking</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
